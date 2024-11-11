@@ -1,1 +1,1 @@
-[liuzhenyu,net](https://liuzhenyu,net)
+[liuzhenyu.net](https://liuzhenyu.net)
