@@ -3,13 +3,21 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="App flex">
+      <div className='basis-1/5'>
+        <h1 className="text-3xl font-bold underline">
+          Zhenyu.Liu
+        </h1>
+        <p className='hover:bg-sky-500'>
+          Software Engineer
         </p>
-      </header>
+        <p>
+          Street Photographer
+        </p>
+      </div>
+      <div className='basis-4/5'>
+        <h1>Ok</h1>
+       </div>
     </div>
   );
 }
