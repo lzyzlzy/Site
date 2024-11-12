@@ -1,0 +1,83 @@
+{
+    "name": "Zhenyu.Liu",
+    "subTitle": [
+        "Software Engineer",
+        "Street Photographer",
+        "Home Barista"
+    ],
+    "links": [
+        {
+            "name": "Github",
+            "src": "https://github.com/lzyzlzy"
+        },
+        {
+            "name": "Instagram",
+            "src": "https://www.instagram.com/andrewliu30/"
+        },
+        {
+            "name": "Red",
+            "src": "https://www.xiaohongshu.com/user/profile/5d785fe10000000001002fac"
+        }
+    ],
+    "menu": [
+        {
+            "key": "sh",
+            "name": "Shanghai"
+        },
+        {
+            "key": "hk",
+            "name": "Hongkong"
+        },
+        {
+            "key": "bj",
+            "name": "Beijing"
+        }
+    ],
+    "data": [
+        {
+            "key": "sh",
+            "type": "image",
+            "resource": [
+                {
+                    "src": "https://lfi-online.de/webfile/show/9516567/x=1980",
+                    "location": "",
+                    "desc": ""
+                },
+                {
+                    "src": "https://lfi-online.de/webfile/show/9516472/x=1980",
+                    "location": "",
+                    "desc": ""
+                },
+                {
+                    "src": "https://lfi-online.de/webfile/show/9516468/x=1980",
+                    "location": "",
+                    "desc": ""
+                },
+                {
+                    "src": "https://lfi-online.de/webfile/show/9294919/x=1980",
+                    "location": "",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "key": "hk",
+            "type": "image",
+            "resource": [
+               
+            ]
+        },
+        {
+            "key": "bj",
+            "type": "image",
+            "resource": [
+               
+            ]
+        },
+        {
+            "key": "",
+            "type": "text",
+            "resource": ""
+        }
+    ]
+}
