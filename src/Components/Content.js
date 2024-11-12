@@ -1,21 +1,21 @@
-import { useContext } from 'react';
-import { ConfigContext } from '../Contexts/ConfigContexts.js'
-import ImageContent from './ImageContent.js';
+import { useContext } from "react";
+import { ConfigContext } from "../Contexts/ConfigContexts.js";
+import ImageContent from "./ImageContent.js";
 
 export default function Content() {
-    let [, data] = useContext(ConfigContext)
-    const type = data?.type
+  let [, data] = useContext(ConfigContext);
+  const type = data?.type;
 
-    if (type === 'image') {
-        return (
-            <div className='grow md:ml-9'>
-                <ImageContent />
-            </div>
-        )
-    }
+  if (type === "image") {
     return (
-        <div className='grow md:ml-9'>
-            <div>{JSON.stringify(data)}</div>
-        </div>
-    )
+      <div className="grow p-0.5 md:ml-9">
+        <ImageContent />
+      </div>
+    );
+  }
+  return (
+    <div className="grow md:ml-9">
+      <div>{JSON.stringify(data)}</div>
+    </div>
+  );
 }
