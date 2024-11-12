@@ -5,9 +5,10 @@ export const ConfigDispatchContext = createContext(null);
 
 export function ConfigProvider({ children }) {
     let config = require('../config.json')
+    let defaultData = config.data.find(i => i.key === config.defaultKey)
     const [data, dispatch] = useReducer(
         keyReducer,
-        [config, {}]
+        [config, defaultData]
     );
 
     return (
