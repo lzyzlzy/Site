@@ -64,15 +64,47 @@
             "key": "hk",
             "type": "image",
             "resource": [
-               
+                {
+                    "src": "https://lfi-online.de/webfile/show/9420244/x=1980",
+                    "location": "",
+                    "desc": ""
+                },
+                {
+                    "src": "https://lfi-online.de/webfile/show/9420241/x=1980",
+                    "location": "",
+                    "desc": ""
+                },
+                {
+                    "src": "https://lfi-online.de/webfile/show/9420614/x=1980",
+                    "location": "",
+                    "desc": ""
+                },
+                {
+                    "src": "https://lfi-online.de/webfile/show/9420624/x=1980",
+                    "location": "",
+                    "desc": ""
+                }
             ]
         },
         {
             "key": "bj",
             "type": "image",
             "resource": [
-               
-            ]
+                {
+                    "src": "https://lfi-online.de/webfile/show/9357726/x=1980",
+                    "location": "",
+                    "desc": ""
+                },
+                {
+                    "src": "https://lfi-online.de/webfile/show/9352498/x=1980",
+                    "location": "",
+                    "desc": ""
+                },
+                {
+                    "src": "https://lfi-online.de/webfile/show/9357764/x=1980",
+                    "location": "",
+                    "desc": ""
+                }]
         },
         {
             "key": "",
