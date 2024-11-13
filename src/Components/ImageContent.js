@@ -23,6 +23,7 @@ export default function ImageContent() {
         showPlayButton={false}
         showIndex={true}
         disableThumbnailScroll={false}
+        lazyLoad={true}
       />
     </div>
   );
