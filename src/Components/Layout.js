@@ -6,7 +6,7 @@ import {
 } from "../Contexts/ConfigContexts.js";
 
 export default function Layout() {
-  const [config] = useContext(ConfigContext);
+  const [config, data] = useContext(ConfigContext);
   const dispatch = useContext(ConfigDispatchContext);
   const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ export default function Layout() {
       type: "setKey",
       key: key,
     });
-    navigate('/')
+    navigate("/");
   }
   return (
     <div className="flex flex-col md:flex-row">
@@ -33,7 +33,9 @@ export default function Layout() {
             {config.menu.map((item) => (
               <li>
                 <button
-                  className="hover:font-bold"
+                  className={`hover:font-bold ${
+                    data.key === item.key ? "font-bold" : ""
+                  }`}
                   onClick={() => setMenuKey(item.key)}
                 >
                   {item.name}
@@ -44,9 +46,7 @@ export default function Layout() {
         </div>
         <div className="mt-3 font-medium">
           <p className="hover:font-bold">
-            <Link to={"about"}>
-              About
-            </Link>
+            <Link to={"about"}>About</Link>
           </p>
         </div>
         <div className="mt-3 underline">
