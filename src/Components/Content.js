@@ -1,21 +1,26 @@
 import { useContext } from "react";
-import { ConfigContext } from "../Contexts/ConfigContexts.js";
+import { useSearchParams } from "react-router-dom";
+import {
+  ConfigContext,
+  ConfigDispatchContext,
+} from "../Contexts/ConfigContexts.js";
 import ImageContent from "./ImageContent.js";
 
 export default function Content() {
   let [, data] = useContext(ConfigContext);
+  const dispatch = useContext(ConfigDispatchContext);
+  let [searchParams] = useSearchParams();
+  const key = searchParams.get("k");
+  if (key) {
+    dispatch({
+      type: "setKey",
+      key: key,
+    });
+  }
   const type = data?.type;
 
   if (type === "image") {
-    return (
-      <div className="grow p-0.5 md:ml-9">
-        <ImageContent />
-      </div>
-    );
+    return <ImageContent />;
   }
-  return (
-    <div className="grow md:ml-9">
-      <div>{JSON.stringify(data)}</div>
-    </div>
-  );
+  return <div>{JSON.stringify(data)}</div>;
 }
