@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { ConfigProvider } from "./Contexts/ConfigContexts";
 import Content from "./Components/Content.js";
 import Layout from "./Components/Layout.js";
+import About from "./About.js";
 
 function App() {
   return (
@@ -14,19 +15,6 @@ function App() {
         </Route>
       </Routes>
     </ConfigProvider>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <h1>About</h1>
-      <p>
-        This is a simple image gallery app built with React. It uses the
-        react-image-gallery package to display images. The app is styled with
-        Tailwind CSS.
-      </p>
-    </div>
   );
 }
 
