@@ -18,7 +18,7 @@ export default function Layout() {
     navigate("/");
   }
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col sm:flex-row">
       <div className="flex-none p-8 font-mono antialiased">
         <h1 className="text-3xl font-bold underline">
           <a href="https://liuzhenyu.net">{config.name}</a>
