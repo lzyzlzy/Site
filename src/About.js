@@ -1,14 +1,17 @@
-import { useContext } from "react";
+import { useContext,useEffect } from "react";
 import {
   ConfigDispatchContext,
 } from "./Contexts/ConfigContexts.js";
 
 export default function About() {
   const dispatch = useContext(ConfigDispatchContext);
-  dispatch({
-    type: "setKey",
-    key: "",
-  });
+
+  useEffect(() => {
+     dispatch({
+       type: "setKey",
+       key: "about",
+     });
+  })
 
   return (
     <div>
