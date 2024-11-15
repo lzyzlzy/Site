@@ -21,7 +21,7 @@ function keyReducer([config, key], action) {
   switch (action.type) {
     case "setKey": {
       let data = config.data.find((i) => i.key === action.key);
-      return [config, data];
+      return [config, data ?? {}];
     }
     default: {
       throw Error("Unknown action: " + action.type);
